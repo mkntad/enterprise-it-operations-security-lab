@@ -36,7 +36,7 @@ The lab was designed to practise common IT operations tasks: central identity ma
 
 ## Repository map
 
-- Infrastructure inventory :               `docs/infrastructure-inventory.md `
+- Infrastructure inventory :               (`docs/infrastructure-inventory.md `)
 - Identity, endpoint, and file services :  `docs/identity-and-file-services.md`
 - Networking, DNS, and security notes :    `docs/network-dns-and-security.md`
 - Incident records and response workflow : `incidents/`
