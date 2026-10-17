@@ -30,8 +30,9 @@ The environment contains four virtual machines on an isolated VMware host-only n
 - DNS server: `10.10.30.10`
 - Addressing: Static IP addresses configured for the lab systems
 
-Screenshot : `../evidence/ubuntu-network-check-01.png`
-			 `../evidence/ubuntu-network-check-02.png`
+Screenshot : 
+* [ubuntu-network-check-01](../evidence/ubuntu-network-check-01.png)
+* [ubuntu-network-check-02](../evidence/ubuntu-network-check-02.png)
 
 ## Known Limitations
 
