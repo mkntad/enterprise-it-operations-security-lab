@@ -21,16 +21,16 @@ ad.nexacore.local
 ```
 
 The built-in Domain Controllers Organizational Unit remains the home of `NEXA-DC01`. The domain controller should not be moved into the custom `NexaCore\Servers` OU.
-Screenshot : *[../evidence/active-directory-overview.png](../evidence/active-directory-overview.png)
+Screenshot : * [../evidence/active-directory-overview.png](../evidence/active-directory-overview.png)
 
 ## Sample identities and groups
 
 The lab includes fictional sample users for IT, Finance, and HR, plus department security groups such as `GG_IT`, `GG_FINANCE`, and `GG_HR`. These identities are for testing only.
 Sample accounts include `daniel.moyo`, `grace.ncube`, and `sarah.dube`.
 
-Screenshot: *[../evidence/active-directory-user-account-details-01.png](../evidence/active-directory-user-account-details-01.png)
-            *[../evidence/active-directory-user-account-details-02.png](../evidence/active-directory-user-account-details-02.png)
-            *[../evidence/active-directory-user-account-details-03.png](../evidence/active-directory-user-account-details-03.png)
+Screenshot: * [../evidence/active-directory-user-account-details-01.png](../evidence/active-directory-user-account-details-01.png)
+            * [../evidence/active-directory-user-account-details-02.png](../evidence/active-directory-user-account-details-02.png)
+            * [../evidence/active-directory-user-account-details-03.png](../evidence/active-directory-user-account-details-03.png)
 
 # Windows 11 Endpoint and Group Policy
 
@@ -47,7 +47,7 @@ The Windows 11 VM was joined to the domain and its computer object was placed in
 
 A GPO named `NexaCore - Workstation Security Baseline` was linked to the custom Computers OU.
 
-Screenshot: [../evidence/windows-gpm.png](../evidence/windows-gpm.png)
+Screenshot: * [../evidence/windows-gpm.png](../evidence/windows-gpm.png)
 
 ## File server: `NEXA-SRV01` (`10.10.30.20`). 
 Department shares:
@@ -55,7 +55,7 @@ Department shares:
 - `\\NEXA-SRV01\Finance$`
 - `\\NEXA-SRV01\HR$`
 
-Screenshot : [../evidence/windows-file-server-share-02.png](../evidence/windows-file-server-share-02.png)
+Screenshot : * [../evidence/windows-file-server-share-02.png](../evidence/windows-file-server-share-02.png)
 
 ## Evidence
 Tested both allowed and denied access with the appropriate lab accounts. Shared and NTFS permissions both affect access.
@@ -65,15 +65,15 @@ Tested both allowed and denied access with the appropriate lab accounts. Shared 
 The Finance and HR share permissions were tested with different departmental accounts. The intended result was that a Finance user could access Finance but not HR, and an HR user could access HR but not Finance.
 The IT share permissions were also tested and the same was true for all departmental groups. IT could only access their own files and access was denied for HR and Finance files.
 
-Screenshot : *[../evidence/active-directory-users-and-groups-03.png](../evidence/active-directory-users-and-groups-03.png)
-             *[../evidence/active-directory-users-and-groups-04.png](../evidence/active-directory-users-and-groups-04.png)
-             *[../evidence/active-directory-users-and-groups-05.png](../evidence/active-directory-users-and-groups-05.png)
-             *[../evidence/active-directory-group-permissions-settings-01.png](../evidence/active-directory-group-permissions-settings-01.png)
-             *[../evidence/active-directory-group-permissions-settings-02.png](../evidence/active-directory-group-permissions-settings-02.png)
-             *[../evidence/active-directory-group-permissions-settings-03.png](../evidence/active-directory-group-permissions-settings-03.png)
-             *[../evidence/windows-file-server-share-03.png](../evidence/windows-file-server-share-03.png)
-             *[../evidence/windows-file-server-share-04.png](../evidence/windows-file-server-share-04.png)
-             *[../evidence/windows-file-server-share-05.png](../evidence/windows-file-server-share-05.png)
+Screenshot : * [../evidence/active-directory-users-and-groups-03.png](../evidence/active-directory-users-and-groups-03.png)
+             * [../evidence/active-directory-users-and-groups-04.png](../evidence/active-directory-users-and-groups-04.png)
+             * [../evidence/active-directory-users-and-groups-05.png](../evidence/active-directory-users-and-groups-05.png)
+             * [../evidence/active-directory-group-permissions-settings-01.png](../evidence/active-directory-group-permissions-settings-01.png)
+             * [../evidence/active-directory-group-permissions-settings-02.png](../evidence/active-directory-group-permissions-settings-02.png)
+             * [../evidence/active-directory-group-permissions-settings-03.png](../evidence/active-directory-group-permissions-settings-03.png)
+             * [../evidence/windows-file-server-share-03.png](../evidence/windows-file-server-share-03.png)
+             * [../evidence/windows-file-server-share-04.png](../evidence/windows-file-server-share-04.png)
+             * [../evidence/windows-file-server-share-05.png](../evidence/windows-file-server-share-05.png)
 
 ## Access-control approach
 
