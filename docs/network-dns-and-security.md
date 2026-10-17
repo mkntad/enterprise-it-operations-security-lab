@@ -10,7 +10,9 @@ ping -c 4 10.10.30.100 (NEXA-WIN11-01)
 nslookup ad.nexacore.local 10.10.30.10
 `
 A failed ping can mean a host is down, disconnected, misconfigured, or blocking ICMP.
-Screenshot : `../evidence/ubuntu-network-configuration.png`
+
+Screenshot : 
+* [ubuntu-network-configuration](../evidence/ubuntu-network-configuration.png)
 
 ## Implemented network
 
@@ -19,10 +21,13 @@ Screenshot : `../evidence/ubuntu-network-configuration.png`
 - Domain DNS server: `10.10.30.10`
 - Lab machines: `10.10.30.10`, `.20`, `.30`, and `.100`
 
-Screenshot : `../evidence/ubuntu-network-connectivity-check.png`
+Screenshot : 
+* [ubuntu-network-connectivity-check](../evidence/ubuntu-network-connectivity-check.png)
 
-VMnet3 is a VMware virtual network name, not a VLAN number. The current lab is isolated and does not have a default gateway. This is intentional for the lab and means the VMs may not have Internet access.
-Screenshot : `../evidence/vmware-network-adapter-configuration.png`
+- VMnet3 is a VMware virtual network name, not a VLAN number. The current lab is isolated and does not have a default gateway. This is intentional for the lab and means the VMs may not have Internet access.
+
+Screenshot : 
+* [vmware-network-adapter-configuration](../evidence/vmware-network-adapter-configuration.png)
 
 
 ## DNS troubleshooting lesson
@@ -31,7 +36,9 @@ Screenshot : `../evidence/vmware-network-adapter-configuration.png`
 - Test the DNS server directly when diagnosing a lookup: ` nslookup ad.nexacore.local 10.10.30.10 `
 
 - On Ubuntu, the local resolver may show `127.0.0.53`, which is the systemd-resolved stub address. That address is a local forwarding service, not the domain controller. A direct query to `10.10.30.10` can help separate a Windows DNS issue from a local resolver configuration issue.
-Screenshot : `../evidence/ubuntu-dns-resolution-troubleshooting-01.png`
+
+Screenshot :
+* [ubuntu-dns-resolution-troubleshooting-01](../evidence/ubuntu-dns-resolution-troubleshooting-01.png)
 
 ### Troubleshooting order
 
@@ -43,7 +50,8 @@ Screenshot : `../evidence/ubuntu-dns-resolution-troubleshooting-01.png`
 6. Check the configured DNS server and search domain.
 7. Review the exact error and recent changes before modifying settings.
 
-Screenshot : `../evidence/ubuntu-dns-resolution-troubleshooting-02.png`
+Screenshot : 
+* [ubuntu-dns-resolution-troubleshooting-02](../evidence/ubuntu-dns-resolution-troubleshooting-02.png)
 
 ## Security Baseline and Auditing
 
@@ -64,9 +72,10 @@ The lab exercise used Windows Security logs to investigate failed and successful
 - **Event ID 4771:** Kerberos pre-authentication failure, which may appear on a domain controller for a domain authentication failure.
 - **Event ID 4776:** credential validation, commonly associated with NTLM authentication.
 
-Screenshot : `../evidence/windows-security-event-01.png`
-			 `../evidence/windows-security-event-02.png`
-		     `../evidence/windows-security-event-03.png`
+Screenshot : 
+* [windows-security-event-01](../evidence/windows-security-event-01.png)
+* [windows-security-event-02](../evidence/windows-security-event-02.png)
+* [windows-security-event-03](../evidence/windows-security-event-03.png)
 
 ### Evidence hygiene
 
