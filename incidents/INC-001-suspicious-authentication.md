@@ -43,6 +43,8 @@ The test account was disabled to demonstrate account containment. The account's 
 
 ## 6. Evidence
 
-- Screenshot : `../evidence/windows-security-event-01.png`
-               `../evidence/windows-security-event-02.png`
-               `../evidence/windows-security-event-03.png`
+- Screenshot :
+* [windows-security-event-01](../evidence/windows-security-event-01.png)
+* [windows-security-event-02](../evidence/windows-security-event-02.png)
+* [windows-security-event-03](../evidence/windows-security-event-03.png)
+
