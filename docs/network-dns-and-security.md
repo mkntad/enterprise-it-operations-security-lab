@@ -1,4 +1,4 @@
-# Networking, Security Notes and DNS Notes
+# Networking, Security and DNS Notes
 
 ## Connectivity
 
