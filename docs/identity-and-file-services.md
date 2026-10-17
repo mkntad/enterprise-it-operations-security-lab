@@ -21,7 +21,9 @@ ad.nexacore.local
 ```
 
 The built-in Domain Controllers Organizational Unit remains the home of `NEXA-DC01`. The domain controller should not be moved into the custom `NexaCore\Servers` OU.
-Screenshot : [active-directory-overview](../evidence/active-directory-overview.png)
+
+Screenshot : 
+* [active-directory-overview](../evidence/active-directory-overview.png)
 
 ## Sample identities and groups
 
@@ -48,7 +50,8 @@ The Windows 11 VM was joined to the domain and its computer object was placed in
 
 A GPO named `NexaCore - Workstation Security Baseline` was linked to the custom Computers OU.
 
-Screenshot:  [windows-gpm](../evidence/windows-gpm.png)
+Screenshot: 
+* [windows-gpm](../evidence/windows-gpm.png)
 
 ## File server: `NEXA-SRV01` (`10.10.30.20`). 
 Department shares:
@@ -56,7 +59,8 @@ Department shares:
 - `\\NEXA-SRV01\Finance$`
 - `\\NEXA-SRV01\HR$`
 
-Screenshot :  [windows-file-server-share-02](../evidence/windows-file-server-share-02.png)
+Screenshot :  
+* [windows-file-server-share-02](../evidence/windows-file-server-share-02.png)
 
 ## Evidence
 Tested both allowed and denied access with the appropriate lab accounts. Shared and NTFS permissions both affect access.
