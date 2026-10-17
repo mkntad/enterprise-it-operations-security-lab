@@ -36,13 +36,13 @@ The lab was designed to practise common IT operations tasks: central identity ma
 
 ## Repository map
 
-- Infrastructure inventory :               (`docs/infrastructure-inventory.md `)
-- Identity, endpoint, and file services :  `docs/identity-and-file-services.md`
-- Networking, DNS, and security notes :    `docs/network-dns-and-security.md`
-- Incident records and response workflow : `incidents/`
-- Monitoring and automation :              `monitoring and automation/`
-- Evidence index :                         `evidence/`
-
+- Infrastructure inventory :  [docs/infrastructure-inventory.md](docs/infrastructure-inventory.md)
+- Identity, endpoint, and file services :  [docs/identity-and-file-services.md](docs/identity-and-file-services.md)
+- Networking, DNS, and security notes :    [docs/network-dns-and-security.md](docs/network-dns-and-security.md)
+- Incident records and response workflow : [incidents/](incidents/)
+- Monitoring and automation :              [monitoring and automation/](monitoring and automation/)
+- Evidence index :                         [evidence/](evidence/)
+  
 ## Validation and evidence
 
 The repository should include evidence that the work was tested, not just configured. Examples include:
